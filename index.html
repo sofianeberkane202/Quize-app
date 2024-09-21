@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+
+    <!-- 
+      - # google font
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/scripts/controller.js" type="module"></script>
+  </head>
+  <body>
+    <div class="quiz">
+      <!-- 
+      <div class="question-container active" data-id="1">
+        <div class="question-box">
+          <h1 class="question" id="question">
+            How would you like premum to help
+          </h1>
+          <p class="text">We'll recommend the right plan for you.</p>
+        </div>
+
+        <ul class="answers">
+          <li class="answer" data-id="1">
+            <img src="./src/images/radio-unchecked.svg" alt="" />
+            <label for="answer1"
+              >to job search with confident and get hired</label
+            >
+          </li>
+
+          <li class="answer" data-id="2">
+            <img src="./src/images/radio-unchecked.svg" alt="" />
+            <label for="answer2"
+              >to grow my workout or manage my reputation</label
+            >
+          </li>
+
+          <li class="answer" data-id="3">
+            <img src="./src/images/radio-unchecked.svg" alt="" />
+            <label for="answer3">to find leads more efectively</label>
+          </li>
+
+          <li class="answer" data-id="4">
+            <img src="./src/images/radio-unchecked.svg" alt="" />
+            <label for="answer4">to find and hire talent faster</label>
+          </li>
+        </ul>
+      </div> 
+      -->
+
+      <div class="btn-quiz">
+        <div class="btn-container">
+          <button class="btn explore active">next question</button>
+          <button class="btn end-of-quiz">end of quiz</button>
+        </div>
+      </div>
+
+      <div class="timer">
+        <span id="minutes">02</span>:<span id="seconds">00</span>
+      </div>
+
+      <div class="move-btn hidden">
+        <button class="btn left hidden">
+          <img src="./src/images/left-arrow.svg" alt="" />
+        </button>
+
+        <button class="btn right">
+          <img src="./src/images/right-arrow.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="questions">
+        <p>
+          Question
+          <span class="current-question">1</span>
+          -
+          <span class="total-questions">10</span>
+        </p>
+      </div>
+
+      <button class="show-results-btn hidden">show your results</button>
+
+      <div class="final-result hidden">
+        <div class="final-score">
+          <div class="progress-inner"><span class="percentage"></span>%</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
