@@ -9,7 +9,7 @@
 :root {
   --bg-color: #f8f9fa;
   --primary-color: #3b5bdb;
-  --color-deep: #364fc7;
+  --color-deep: rgba(54, 78, 199, 0.9);
   --white-color: #fff;
   --text-color: #343a40;
   --text-color-Secondary: #868e96;
@@ -49,7 +49,8 @@ body {
 
 .quiz {
   position: relative;
-  width: 600px;
+  max-width: 600px;
+  width: 90%;
   min-height: 550px;
   background-color: var(--white-color);
   box-shadow: 0 0 15px 2px #dee2e6;
@@ -176,7 +177,7 @@ body {
 }
 
 .move-btn button {
-  background-color: #748ffc;
+  background-color: rgb(116, 143, 252);
   color: var(--white-color);
   border-radius: 50%;
   display: flex;
@@ -307,4 +308,14 @@ use {
 .fa-triangle-exclamation {
   font-size: 24px;
   color: #f00;
+}
+
+@media (max-width: 767px) {
+  .question-box .small-ft {
+    font-size: 16px;
+  }
+
+  .question-box .question {
+    font-size: 14px;
+  }
 }
